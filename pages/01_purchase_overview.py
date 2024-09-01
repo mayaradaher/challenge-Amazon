@@ -9,7 +9,7 @@ dash.register_page(
     __name__,
     suppress_callback_exceptions=True,
     external_stylesheets=[dbc.themes.BOOTSTRAP],
-    path="/overview_puchase",
+    path="/puchase_overview",
 )
 
 import warnings
@@ -37,7 +37,7 @@ layout = dbc.Container(
         html.Div(
             [
                 html.H2(
-                    "Overview purchase",  # title
+                    "Purchase overview",  # title
                     className="title",
                 ),
                 html.Br(),

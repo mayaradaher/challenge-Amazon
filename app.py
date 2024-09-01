@@ -20,7 +20,7 @@ sidebar = html.Div(
         dbc.Nav(
             [
                 dbc.NavLink(
-                    "Overview purchase", href="/overview_puchase", active="exact"
+                    "Purchase Overview", href="/puchase_overview", active="exact"
                 ),
                 dbc.NavLink(
                     "Customer demographics",
@@ -86,7 +86,7 @@ app.index_string = """
 
 app.layout = html.Div(
     [
-        dcc.Location(id="url", pathname="/overview_puchase"),
+        dcc.Location(id="url", pathname="/puchase_overview"),
         sidebar,
         content,
         dash.page_container,
