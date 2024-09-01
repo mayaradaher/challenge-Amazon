@@ -217,8 +217,37 @@ layout = dbc.Container(
                                     ),
                                     html.Br(),
                                     html.H3(
+                                        "1. Select User",
+                                        className="subtitle-small",
+                                    ),
+                                    dbc.Row(
+                                        [
+                                            dbc.Col(
+                                                [
+                                                    dcc.Dropdown(
+                                                        id="user-id-dropdown",
+                                                        options=[
+                                                            {
+                                                                "label": f"User {user_id}",
+                                                                "value": user_id,
+                                                            }
+                                                            for user_id in df[
+                                                                "Survey ResponseID"
+                                                            ]
+                                                        ],
+                                                        placeholder="Survey ResponseID",
+                                                        className="custom-dropdown",
+                                                    ),
+                                                ],
+                                                width=3,
+                                            ),
+                                        ]
+                                    ),
+                                    html.Br(),
+                                    html.Br(),
+                                    html.H3(
                                         children=[
-                                            "1. Please start your query with the word ",
+                                            "2. Please start your query with the word ",
                                             html.Span(
                                                 "Book", style={"fontWeight": "bold"}
                                             ),
@@ -251,34 +280,6 @@ layout = dbc.Container(
                                         ]
                                     ),
                                     html.Br(),
-                                    html.Br(),
-                                    html.H3(
-                                        "2. Select User",
-                                        className="subtitle-small",
-                                    ),
-                                    dbc.Row(
-                                        [
-                                            dbc.Col(
-                                                [
-                                                    dcc.Dropdown(
-                                                        id="user-id-dropdown",
-                                                        options=[
-                                                            {
-                                                                "label": f"User {user_id}",
-                                                                "value": user_id,
-                                                            }
-                                                            for user_id in df[
-                                                                "Survey ResponseID"
-                                                            ]
-                                                        ],
-                                                        placeholder="Survey ResponseID",
-                                                        className="custom-dropdown",
-                                                    ),
-                                                ],
-                                                width=3,
-                                            ),
-                                        ]
-                                    ),
                                     html.Br(),
                                     html.Button(
                                         [
@@ -366,7 +367,7 @@ def update_recommendations(n_clicks, query, user_id):
         # add a combined warning if both conditions are met
         if user_id is None and (not query or not query.lower().startswith("book")):
             combined_warning = (
-                "Please start your query with the word 'Book' and select a User."
+                "Please select a User and start your query with the word 'Book'."
             )
             warnings = [
                 html.P(
@@ -395,9 +396,7 @@ def update_recommendations(n_clicks, query, user_id):
         book_info = user_info["books"]
 
         # add title for personal user information
-        user_info_title = html.H3(
-            "User Demographic Information", className="subtitle-small-color"
-        )
+        user_info_title = html.H3("User Profile", className="subtitle-small-color")
 
         # format personal user information as a list of paragraphs
         user_info_display = [
