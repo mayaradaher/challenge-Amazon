@@ -5,11 +5,12 @@ from dash import Dash, dcc, html
 app = Dash(
     __name__,
     use_pages=True,
-    # suppress_callback_exceptions=True,
+    title="Amazon Dashboard",
     external_stylesheets=[dbc.themes.BOOTSTRAP],
 )
 server = app.server
 
+# sidebar
 sidebar = html.Div(
     [
         dbc.Row(
@@ -62,6 +63,7 @@ content = html.Div(
     className="page-content",
 )
 
+# defining font-awesome and fonts
 app.index_string = """
 <!DOCTYPE html>
 <html>
@@ -69,6 +71,7 @@ app.index_string = """
         {%metas%}
         {%css%}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="/assets/logos/favicon.svg" type="image/x-icon">
     </head>
     <body>
         {%app_entry%}
@@ -81,9 +84,9 @@ app.index_string = """
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 </style>
-
 """
 
+# layout
 app.layout = html.Div(
     [
         dcc.Location(id="url", pathname="/puchase_overview"),
