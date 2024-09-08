@@ -1,7 +1,6 @@
 **Dashboard application about Amazon Purchases** \
 I deployed it on Render and you can access it [here](https://challenge-amazon.onrender.com/puchase_overview). \
-
-I also deployed it on Google Cloud Run. You can access it [here](https://amazonchallenge-122629525979.southamerica-east1.run.app). \
+I also deployed it on Google Cloud Run. You can access it [here](https://amazonchallenge-122629525979.southamerica-east1.run.app).
 
 \
 The app is divided into three main pages:
