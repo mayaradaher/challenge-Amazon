@@ -1,8 +1,9 @@
-**Dashboard application about Amazon Purchases** \
-I deployed it on Render and you can access it [here](https://challenge-amazon.onrender.com/puchase_overview). \
-I also deployed it on Google Cloud Run. You can access it [here](https://amazonchallenge-122629525979.southamerica-east1.run.app).
+### **Dashboard Application about Amazon Purchases**
+I deployed it on **Render** and you can access it [here](https://challenge-amazon.onrender.com/puchase_overview). \
+I also deployed it on **Google Cloud Run**. You can access it [here](https://amazonchallenge-122629525979.southamerica-east1.run.app).
 
-\
+The application, designed to analyze Amazon purchases, handles a **database exceeding 300 MB**. To optimize performance, extensive **data cleaning** was performed, and the database was converted to the **Parquet format**, significantly improving loading times and efficiency. The app also integrates a language model **(LLM)** via **Gemini**, enabling personalized book recommendations based on users' profiles and purchase histories.
+
 The app is divided into three main pages:
 - **Purchase overview**: The application provides a detailed view of purchases from 2018 to 2022. Data can be analyzed year-over-year using an interactive filter, allowing users to explore and understand purchases trends.
 
