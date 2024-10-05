@@ -249,12 +249,12 @@ def update_chart(gender, age, education, state, income):
         color_continuous_scale=custom_colorscale,
         scope="usa",
         title="Users by State",
-        hover_data=["Q-demos-state"],  # Inclui a coluna "State" no hover
+        hover_data=["Q-demos-state"],
     )
 
     state_chart.update_traces(
         hoverlabel=dict(bgcolor="rgba(255, 255, 255, 0.1)", font_size=12),
-        hovertemplate="<b>%{customdata[0]}</b><br>Value: %{z:,}<extra></extra>",  # Mostra o nome do estado e o número de usuários
+        hovertemplate="<b>%{customdata[0]}</b><br>Value: %{z:,}<extra></extra>",  # state name and user number
     )
 
     state_chart.update_layout(
