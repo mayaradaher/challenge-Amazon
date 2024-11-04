@@ -1,20 +1,20 @@
-<br />
+<br/>
 <div align="center">
-  <a href="https://amazonchallenge-122629525979.southamerica-east1.run.app" target="_blank">
-    <img src="assets/logos/favicon.svg" alt="Logo" width="50" height="50">
+  <a href="https://amazonchallenge-122629525979.southamerica-east1.run.app">
+    <img src="assets/logos/favicon.svg" width="50px">
+    <h3 align="center">Amazon Purchases App</h3>
   </a>
+</div>
 
-  <h3 align="center">Amazon Purchases App</h3>
-
-  <p align="center">
+<div align="center">
     The app, designed to analyze Amazon purchases, handles a database exceeding 300 MB. To optimize performance, extensive data cleaning was performed, and the database was converted to the Parquet format, significantly improving loading times and efficiency. The app also integrates a language model (LLM) via Gemini, enabling personalized book recommendations based on users' profiles and purchase histories.
-    <br />
-    <br />
-    <strong>🥇 Winner of the
+    <br/>
+    <br/>
+    🥇 Winner of the
     <a href="https://community.plotly.com/t/dash-club-16-autumn-app-challenge-figure-friday-improving-plotly-charts-component-and-app-of-the-month/87493" target="_blank">Plotly App Challenge 2024 »</a>
-    <br />
-    <br />
-    <strong>The app can be accessed
+    <br/>
+    <br/>
+    The app can be accessed
     <a href="https://amazonchallenge-122629525979.southamerica-east1.run.app" target="_blank">here »</a>
     </strong>
   </p>
