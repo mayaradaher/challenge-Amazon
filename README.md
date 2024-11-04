@@ -15,9 +15,11 @@
     <br/>
     <br/>
     The app can be accessed
-    <a href="https://amazonchallenge-122629525979.southamerica-east1.run.app" target="_blank">here »</a>
-    </strong>
-  </p>
+    <a href="https://amazonchallenge-122629525979.southamerica-east1.run.app" target="_blank">here »</a>  
+    <br/>
+    <br/>
+    Available on
+    <a href="https://plotly.com/examples/" target="_blank">Plotly Dash App Examples »</a>
 </div>
 
 ---
