@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <a href="https://challengemichelin-122629525979.southamerica-east1.run.app" target="_blank">
+  <a href="https://amazonchallenge-122629525979.southamerica-east1.run.app" target="_blank">
     <img src="assets/logos/favicon.svg" alt="Logo" width="50" height="50">
   </a>
 
