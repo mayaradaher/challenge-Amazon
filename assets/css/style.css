@@ -1,0 +1,243 @@
+/* assets/styles.css */
+
+/* Titles and subtitles */
+.title {
+    font-size: 28px;
+    color: #3a4552;
+}
+
+.subtitle-medium {
+    font-size: 24px;
+    color: #3a4552;
+}
+
+.subtitle-small {
+    font-size: 16px;
+    color: #3a4552;
+}
+
+.subtitle-small-color {
+    font-size: 18px;
+    color: #803f0c;
+}
+
+.subtitle-sidebar {
+    font-size: 12px;
+    color: #3a4552;
+}
+
+.subtitle-sidebar a {
+    color: #3a4552;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.subtitle-sidebar a:hover {
+    color: #f79500;
+}
+
+/* Body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    margin-left: 16.3rem;
+    margin-right: 8px;
+    margin-top: 2rem;
+
+}
+
+/* Content */
+.content {
+    margin-left: calc(16.3rem + 1rem);
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16rem;
+    padding: 1rem 1rem;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 12rem;
+    }
+
+    .content {
+        margin-left: calc(12rem + 1rem);
+    }
+}
+
+.sidebar-logo {
+    margin-top: 1rem;
+    display: flex;
+
+}
+
+.sidebar-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-pills .nav-link {
+    color: #3a4552;
+}
+
+.nav-pills .nav-link.active {
+    color: #3a4552;
+    background-color: #ececec;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 6px 8px rgba(89, 87, 87, 0.1);
+}
+
+.card-body {
+    padding: 25px;
+    color: #3a4552;
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    color: #f79500;
+}
+
+.card-title {
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+/* Cards charts */
+.chart-card {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(89, 87, 87, 0.1);
+}
+
+/* Dropdown */
+.custom-dropdown {
+    color: #3a4552;
+    background-color: #ececec;
+}
+
+.custom-dropdown .VirtualizedSelectOption:hover {
+    background-color: #ececec;
+    color: #3a4552;
+}
+
+.custom-dropdown .Select-control:focus-within {
+    border-color: #aaa;
+    box-shadow: none;
+}
+
+/* Placeholder */
+.search-input {
+    width: 60%;
+    height: 45px;
+    color: #3a4552;
+    border: 1px solid #f79500;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Button */
+.btn-custom {
+    background-color: #f79500;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+    border: 1px solid #f79500;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-info-text {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    color: #3a4552;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+/* Table */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th.dash-filter input.dash-filter--case--sensitive {
+    font-family: Inter, sans-serif;
+    color: #3a4552 !important;
+    border-color: #3a4552 !important;
+}
+
+.dash-spreadsheet-container table {
+    --border-color: #3a4552 !important;
+    --accent: #3a4552 !important;
+    --selected-background: #3a4552 !important;
+    --selected-color: #3a4552 !important;
+}
+
+.dash-table-container .previous-next-container {
+    font-size: 13px;
+    text-align: right;
+    padding: 5px 0px;
+    color: #3a4552 !important;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+    color: #3a4552 !important;
+
+}
+
+/* Text danger */
+.text-danger {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    color: #f41800;
+    padding: 1px;
+
+}
+
+/* Text recommendation */
+.text-recommendations {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    white-space: pre-wrap;
+    color: #333333;
+    background-color: #fff;
+    padding: 25px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(89, 87, 87, 0.1);
+}
+
+/* Tooltip */
+.tooltip-inner {
+    max-width: 300px;
+    background-color: #211F1F;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px;
+}
+
+.bs-tooltip-end .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
+    border-right-color: #211F1F;
+}
