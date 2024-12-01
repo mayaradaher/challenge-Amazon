@@ -1,11 +1,13 @@
 name: Deploy app
-run-name: Deploy HTML pages generated from Dash app
+run-name: Deploy pages generated from Dash app
 on: [push]
 jobs:
 
   run_app:
     name: Run app
     runs-on: ubuntu-latest
+    env:
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
     steps:
       - name: Checkout code
@@ -51,7 +53,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
     steps:
       - name: Deploy to GitHub Pages
