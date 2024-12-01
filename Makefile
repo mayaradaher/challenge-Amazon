@@ -31,8 +31,7 @@ run_app:
 	rsync -a --remove-source-files assets/ pages_files/assets/
 	rm -r assets/
 
-
-	ps -C python -o pid= | xargs kill -9
+	ps -C python -o pid= | xargs -r kill -9 || true
 
 clean_dirs:
 	ls
