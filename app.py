@@ -97,4 +97,4 @@ app.layout = html.Div(
 )
 
 if __name__ == "__main__":
-    app.run_server(port=8080, debug=True)  # True = automatically update
+    app.run_server(debug=False)
