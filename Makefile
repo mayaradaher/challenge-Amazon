@@ -31,7 +31,7 @@ run_app:
 
 	rsync -av assets/ pages_files/assets/
 
-	ps -C python -o pid= | xargs kill -9
+	ps | grep python | awk '{print $$1}' | xargs kill -9
 
 clean_dirs:
 	ls
