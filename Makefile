@@ -27,11 +27,11 @@ run_app:
 	find pages_files -type f -exec sed -i.bak 's|assets|dash-actions-tutorial/assets|g' {} \;
 
 	if [ -f pages_files/_dash-layout ]; then
-    mv pages_files/_dash-layout pages_files/_dash-layout.json
+    	mv pages_files/_dash-layout pages_files/_dash-layout.json
 	fi
 
 	if [ -f pages_files/_dash-dependencies ]; then
-    mv pages_files/_dash-dependencies pages_files/_dash-dependencies.json
+    	mv pages_files/_dash-dependencies pages_files/_dash-dependencies.json
 	fi
 
 	rsync -a --remove-source-files assets/ pages_files/assets/
