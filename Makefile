@@ -32,3 +32,9 @@ run_app:
 	rsync -av assets/ pages_files/assets/
 
 	ps -C python -o pid= | xargs kill -9
+
+clean_dirs:
+	ls
+	rm -rf 127.0.0.1:8050/
+	rm -rf pages_files/
+	rm -rf joblib
