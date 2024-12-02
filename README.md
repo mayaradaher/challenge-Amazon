@@ -19,8 +19,7 @@
     <br/>
     <br/>
     The app can be accessed
-    <a href="https://amazonchallenge-122629525979.southamerica-east1.run.app" target="_blank">here »</a> 
-   
+    <a href="https://challenge-amazon.onrender.com" target="_blank">here »</a>
 </div>
 
 ## Award Description
