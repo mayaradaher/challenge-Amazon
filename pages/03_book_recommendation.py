@@ -25,8 +25,8 @@ api_key = os.getenv("GOOGLE_API_KEY")
 
 # initialize LLM model
 llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash", google_api_key=api_key
-)  # gemini-1.5-flash ou gemini-1.5-pro
+    model="gemini-2.0-flash-lite", google_api_key=api_key
+)
 
 # create template
 template = """
