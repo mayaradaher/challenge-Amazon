@@ -172,7 +172,7 @@ layout = dbc.Container(
                         dbc.Col(
                             html.H2(
                                 [
-                                    "Book recommendation Chatbot",
+                                    "AI Book recommendation",
                                     html.Span(
                                         html.I(
                                             className="fa fa-info-circle",

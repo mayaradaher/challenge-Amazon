@@ -29,7 +29,7 @@ sidebar = html.Div(
                     active="exact",
                 ),
                 dbc.NavLink(
-                    "Book recommendation", href="/book_recommendation", active="exact"
+                    "AI Book recommendation", href="/book_recommendation", active="exact"
                 ),
             ],
             vertical=True,
