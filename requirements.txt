@@ -18,7 +18,7 @@ google-auth==2.34.0
 google-auth-httplib2==0.2.0
 google-generativeai==0.7.2
 googleapis-common-protos==1.65.0
-grpcio==1.66.1
+grpcio>=1.66.2
 grpcio-status==1.62.3
 gunicorn==23.0.0
 h11==0.14.0
@@ -41,9 +41,9 @@ orjson==3.10.7
 packaging==24.1
 pandas==2.2.2
 plotly==5.24.0
-proto-plus==1.24.0
+proto-plus==1.25.0
 protobuf==4.25.4
-pyarrow==17.0.0
+pyarrow>=18.0.0
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
 pydantic==2.8.2
