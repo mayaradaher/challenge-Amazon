@@ -37,7 +37,7 @@ layout = dbc.Container(
         html.Div(
             [
                 html.H2(
-                    "Purchase overview",  # title
+                    "Purchase Overview",  # title
                     className="title",
                 ),
                 html.Br(),

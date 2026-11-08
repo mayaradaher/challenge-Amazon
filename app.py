@@ -24,12 +24,14 @@ sidebar = html.Div(
                     "Purchase Overview", href="/puchase_overview", active="exact"
                 ),
                 dbc.NavLink(
-                    "Customer demographics",
+                    "Customer Demographics",
                     href="/customer_demographics",
                     active="exact",
                 ),
                 dbc.NavLink(
-                    "AI Book recommendation", href="/book_recommendation", active="exact"
+                    "AI Book Recommendation",
+                    href="/book_recommendation",
+                    active="exact",
                 ),
             ],
             vertical=True,

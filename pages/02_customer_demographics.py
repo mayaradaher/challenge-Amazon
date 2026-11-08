@@ -20,7 +20,7 @@ layout = dbc.Container(
         html.Div(
             [
                 html.H2(
-                    "Customer demographics",  # title
+                    "Customer Demographics",  # title
                     className="title",
                 ),
                 html.H3(
